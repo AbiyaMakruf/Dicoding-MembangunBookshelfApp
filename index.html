@@ -4,11 +4,10 @@
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bookshelf App</title>
-
-    <!-- Impor script kamu di sini -->
-    <!-- Lampirkan `defer` jika pemanggilan dilakukan dalam <head> -->
-    <script defer src="main.js"></script>
+    <script defer src="assets/js/main.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css"/>
   </head>
+  
   <body>
     <header>
       <h1>Bookshelf App</h1>
@@ -59,20 +58,6 @@
         <h2>Belum selesai dibaca</h2>
 
         <div id="incompleteBookList" data-testid="incompleteBookList">
-          <!-- 
-            Ini adalah struktur HTML untuk masing-masing buku.
-            Pastikan susunan elemen beserta atribut data-testid menyesuaikan seperti contoh ini.
-          -->
-          <div data-bookid="123123123" data-testid="bookItem">
-            <h3 data-testid="bookItemTitle">Judul Buku 1</h3>
-            <p data-testid="bookItemAuthor">Penulis: Penulis Buku 1</p>
-            <p data-testid="bookItemYear">Tahun: 2030</p>
-            <div>
-              <button data-testid="bookItemIsCompleteButton">Selesai dibaca</button>
-              <button data-testid="bookItemDeleteButton">Hapus Buku</button>
-              <button data-testid="bookItemEditButton">Edit Buku</button>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -80,20 +65,6 @@
         <h2>Selesai dibaca</h2>
 
         <div id="completeBookList" data-testid="completeBookList">
-          <!-- 
-            Ini adalah struktur HTML untuk masing-masing buku.
-            Pastikan susunan elemen beserta atribut data-testid menyesuaikan seperti contoh ini.
-          -->
-          <div data-bookid="456456456" data-testid="bookItem">
-            <h3 data-testid="bookItemTitle">Judul Buku 2</h3>
-            <p data-testid="bookItemAuthor">Penulis: Penulis Buku 2</p>
-            <p data-testid="bookItemYear">Tahun: 2030</p>
-            <div>
-              <button data-testid="bookItemIsCompleteButton">Selesai dibaca</button>
-              <button data-testid="bookItemDeleteButton">Hapus Buku</button>
-              <button data-testid="bookItemEditButton">Edit Buku</button>
-            </div>
-          </div>
         </div>
       </section>
     </main>

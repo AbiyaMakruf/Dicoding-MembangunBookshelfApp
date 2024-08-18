@@ -1,0 +1,180 @@
+/* * {
+    border: 1px solid red;
+} */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff0f0;
+    color: #333;
+}
+
+header {
+    background-color: #b30000;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    color: #b30000;
+}
+
+form {
+    background-color: #ffcccc;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+label {
+    color: #990000;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 99%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 2px solid #ff6666;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #e60000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #cc0000;
+}
+
+section {
+    margin: 20px;
+}
+
+div[data-testid="bookItem"] {
+    background-color: #ffe6e6;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border-left: 5px solid #b30000;
+}
+
+div[data-testid="bookItem"] h3 {
+    color: #b30000;
+}
+
+div[data-testid="bookItem"] p {
+    margin: 5px 0;
+    color: #800000;
+}
+
+div[data-testid="bookItem"] button {
+    margin-right: 10px;
+}
+
+#incompleteBookList, #completeBookList {
+    background-color: #fff0f0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+@media (max-width: 768px) {
+    header {
+        padding: 15px;
+        font-size: 1.5em;
+    }
+
+    h1 {
+        font-size: 1.75em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="checkbox"] {
+        padding: 8px;
+    }
+
+    button {
+        padding: 8px 15px;
+        font-size: 1em;
+    }
+
+    div[data-testid="bookItem"] {
+        padding: 10px;
+        margin-bottom: 8px;
+    }
+
+    div[data-testid="bookItem"] h3 {
+        font-size: 1.25em;
+    }
+
+    div[data-testid="bookItem"] p {
+        font-size: 0.95em;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+        font-size: 1.25em;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.25em;
+    }
+
+    form {
+        padding: 10px;
+    }
+
+    input[type="text"],
+    input[type="number"]{
+        padding: 6px;
+        width: 95%;
+    }
+
+    button {
+        padding: 6px 10px;
+        font-size: 0.9em;
+        margin-top: 10px;
+    }
+
+    div[data-testid="bookItem"] {
+        padding: 8px;
+        margin-bottom: 6px;
+    }
+
+    div[data-testid="bookItem"] h3 {
+        font-size: 1.1em;
+    }
+
+    div[data-testid="bookItem"] p {
+        font-size: 0.85em;
+    }
+
+    section {
+        margin: 15px;
+    }
+}
