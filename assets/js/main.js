@@ -50,7 +50,7 @@ function generateBookObject(id, title, author, year, isComplete) {
 function addBook() {
   const bookTitle = document.getElementById('bookFormTitle').value;
   const bookAuthor = document.getElementById('bookFormAuthor').value;
-  const bookYear = document.getElementById('bookFormYear').value;
+  const bookYear = parseInt(document.getElementById('bookFormYear').value);
   const bookIsComplete = document.getElementById('bookFormIsComplete').checked;
 
   const generatedID = generateId();
@@ -161,12 +161,15 @@ document.getElementById('searchBook').addEventListener('submit', function (event
   function makeBookElement(book) {
     const bookTitle = document.createElement('h3');
     bookTitle.innerText = book.title;
+    bookTitle.setAttribute('data-testid', 'bookItemTitle');
   
     const bookAuthor = document.createElement('p');
     bookAuthor.innerText = `Penulis: ${book.author}`;
+    bookAuthor.setAttribute('data-testid', 'bookItemAuthor');
   
     const bookYear = document.createElement('p');
     bookYear.innerText = `Tahun: ${book.year}`;
+    bookYear.setAttribute('data-testid', 'bookItemYear');
   
     const bookContainer = document.createElement('div');
     bookContainer.classList.add('book-item');
@@ -231,7 +234,7 @@ document.getElementById('searchBook').addEventListener('submit', function (event
   function updateBook(bookId) {
     const bookTitle = document.getElementById('bookFormTitle').value;
     const bookAuthor = document.getElementById('bookFormAuthor').value;
-    const bookYear = document.getElementById('bookFormYear').value;
+    const bookYear = parseInt(document.getElementById('bookFormYear').value);
     const bookIsComplete = document.getElementById('bookFormIsComplete').checked;
   
     const book = findBook(bookId);
